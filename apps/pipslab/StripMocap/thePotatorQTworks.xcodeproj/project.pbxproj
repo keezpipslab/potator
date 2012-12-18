@@ -46,8 +46,8 @@
 		A592FA21159B4859003AE932 /* ofxOscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A592FA12159B4859003AE932 /* ofxOscReceiver.cpp */; };
 		A592FA22159B4859003AE932 /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A592FA14159B4859003AE932 /* ofxOscSender.cpp */; };
 		A5C5CA2A16398FA800BAD1FC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C5CA2916398FA800BAD1FC /* CoreVideo.framework */; };
-		A5E07BB2163EC87D00A1E557 /* ofxQTKitVideoGrabber.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5E07BAC163EC87D00A1E557 /* ofxQTKitVideoGrabber.mm */; };
 		A5E07C16163EC90D00A1E557 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E07C15163EC90D00A1E557 /* QTKit.framework */; };
+		AAAAD6AC167FB0D100174A4A /* ofxQTKitVideoGrabber.mm in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD6AB167FB0D100174A4A /* ofxQTKitVideoGrabber.mm */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -215,10 +215,12 @@
 		A592FA15159B4859003AE932 /* ofxOscSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxOscSender.h; path = ofxOsc/src/ofxOscSender.h; sourceTree = SOURCE_ROOT; };
 		A592FA8B159B4B53003AE932 /* thePotatorQTworksDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thePotatorQTworksDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C5CA2916398FA800BAD1FC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		A5E07BAB163EC87D00A1E557 /* ofxQTKitVideoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxQTKitVideoGrabber.h; path = ofxQTKitVideoGrabber/src/ofxQTKitVideoGrabber.h; sourceTree = SOURCE_ROOT; };
-		A5E07BAC163EC87D00A1E557 /* ofxQTKitVideoGrabber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ofxQTKitVideoGrabber.mm; path = ofxQTKitVideoGrabber/src/ofxQTKitVideoGrabber.mm; sourceTree = SOURCE_ROOT; };
 		A5E07C15163EC90D00A1E557 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
 		A5FC6FF516060A1B00734798 /* kwast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kwast.h; sourceTree = "<group>"; };
+		AAAAD6A7167FB0D100174A4A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AAAAD6A8167FB0D100174A4A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		AAAAD6AA167FB0D100174A4A /* ofxQTKitVideoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxQTKitVideoGrabber.h; sourceTree = "<group>"; };
+		AAAAD6AB167FB0D100174A4A /* ofxQTKitVideoGrabber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxQTKitVideoGrabber.mm; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -642,29 +644,31 @@
 			path = ../../../addons/ofxSyphon;
 			sourceTree = SOURCE_ROOT;
 		};
-		A5E07AC8163EC87A00A1E557 /* ofxQTKitVideoGrabber */ = {
+		AAAAD6A6167FB0D100174A4A /* ofxQTKitVideoGrabber */ = {
 			isa = PBXGroup;
 			children = (
-				A5E07BAA163EC87D00A1E557 /* src */,
+				AAAAD6A7167FB0D100174A4A /* .gitignore */,
+				AAAAD6A8167FB0D100174A4A /* README */,
+				AAAAD6A9167FB0D100174A4A /* src */,
 			);
-			path = ofxQTKitVideoGrabber;
-			sourceTree = SOURCE_ROOT;
+			name = ofxQTKitVideoGrabber;
+			path = ../../../addons/ofxQTKitVideoGrabber;
+			sourceTree = "<group>";
 		};
-		A5E07BAA163EC87D00A1E557 /* src */ = {
+		AAAAD6A9167FB0D100174A4A /* src */ = {
 			isa = PBXGroup;
 			children = (
-				A5E07BAB163EC87D00A1E557 /* ofxQTKitVideoGrabber.h */,
-				A5E07BAC163EC87D00A1E557 /* ofxQTKitVideoGrabber.mm */,
+				AAAAD6AA167FB0D100174A4A /* ofxQTKitVideoGrabber.h */,
+				AAAAD6AB167FB0D100174A4A /* ofxQTKitVideoGrabber.mm */,
 			);
-			name = src;
-			path = ofxQTKitVideoGrabber/src;
-			sourceTree = SOURCE_ROOT;
+			path = src;
+			sourceTree = "<group>";
 		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				AAAAD6A6167FB0D100174A4A /* ofxQTKitVideoGrabber */,
 				A5C2BA08166401120054E4AE /* ofxSyphon */,
-				A5E07AC8163EC87A00A1E557 /* ofxQTKitVideoGrabber */,
 				A55CD7DB15F8E1D000B7FA07 /* ofxMidi */,
 				A592F9EC159B4859003AE932 /* ofxOsc */,
 				A592F93D159B47E7003AE932 /* ofxGamepad */,
@@ -860,7 +864,6 @@
 				A592FA20159B4859003AE932 /* ofxOscMessage.cpp in Sources */,
 				A592FA21159B4859003AE932 /* ofxOscReceiver.cpp in Sources */,
 				A592FA22159B4859003AE932 /* ofxOscSender.cpp in Sources */,
-				A5E07BB2163EC87D00A1E557 /* ofxQTKitVideoGrabber.mm in Sources */,
 				54ED623E167F9AE700EC547F /* ofxBaseMidi.cpp in Sources */,
 				54ED623F167F9AE700EC547F /* ofxMidi.cpp in Sources */,
 				54ED6240167F9AE700EC547F /* ofxMidiIn.cpp in Sources */,
@@ -872,6 +875,7 @@
 				54ED6253167F9B5900EC547F /* ofxSyphonClient.mm in Sources */,
 				54ED6254167F9B5900EC547F /* ofxSyphonServer.mm in Sources */,
 				54ED625A167F9CC000EC547F /* SyphonNameboundClient.m in Sources */,
+				AAAAD6AC167FB0D100174A4A /* ofxQTKitVideoGrabber.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -270,5 +270,8 @@ class testApp : public ofBaseApp , public ofxMidiListener {
 	unsigned char * 	sampleTexture;
 	
 	ofxSyphonServer syphOut;
+    
+    ofImage sendableImage;
+    unsigned char *  sendableTexture;
 	
 };

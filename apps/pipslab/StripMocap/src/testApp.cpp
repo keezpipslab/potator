@@ -43,7 +43,7 @@ void testApp::setup(){
 	vidGrabber.listVideoDevices();											// all list... methods also return a vector<string> of devices/codecs
 	vidGrabber.listAudioDevices();
 	
-	vidGrabber.setVideoDeviceID("Built-in iSight");							// can set deviceID's by string
+	//vidGrabber.setVideoDeviceID("Built-in iSight");							// can set deviceID's by string
 	vidGrabber.setAudioDeviceID("Built-in Microphone");
 	
 	vidGrabber.listVideoCodecs();
@@ -60,7 +60,7 @@ void testApp::setup(){
 	
 	vidGrabber.setVerbose(true);
 	//	
-	vidGrabber.setDeviceID(1);
+	vidGrabber.setDeviceID(19);
 	//	
 	//	vidGrabber.initGrabber(camWidth,camHeight);
 	vidGrabber.initRecording();							// call this to init recording output 
@@ -261,6 +261,11 @@ void testApp::setup(){
 	
 	realTimeGrab = true;
 	 scannedImage.allocate(camWidth, camHeight, OF_IMAGE_COLOR);
+    
+   
+    
+    sendableImage.allocate(85, 1, OF_IMAGE_COLOR);
+    sendableTexture = new unsigned char[85*3];
 
 }
 
@@ -722,6 +727,37 @@ void testApp::update(){
 					bigVideoTexture.loadData(bigCharTexture, camWidth*6,picHi, GL_RGB);
 					
 				}
+                
+                
+                ///////// nieuw //
+                int deler = (camWidth/ 85);
+                // cout << deler << " ";
+                for (int i=0; i<85; i++) {
+                    //     cout << i << " ";
+                    int tot1 = 0;
+                    int tot2 = 0;
+                    int tot3 = 0;
+                    for (int j=0; j< deler; j++) {
+                        //  for (int k=0; k<3; k++) {
+                        tot1 += pixels[((camHeight/ 2) * camWidth  +    i*(int)(camWidth/ 85)+j) *3];
+                        tot2 += pixels[((camHeight/ 2) * camWidth  +    i*(int)(camWidth/ 85)+j) *3 +1];
+                        tot3 += pixels[((camHeight/ 2) * camWidth  +    i*(int)(camWidth/ 85)+j) *3 +2];
+                        //  }
+                    }
+                    // cout << "tot1:" << tot1 << " " << tot2 << " " << tot3 << " ";
+                    
+                    char nuTot1= tot1/ deler;
+                    char nuTot2= tot2/ deler;
+                    char nuTot3= tot3/ deler;
+                    
+                    // cout << "tot1:" << nuTot1 << " " << nuTot2 << " " << nuTot3 << " ";
+                    sendableTexture[i*3]= nuTot1;
+                    sendableTexture[i*3+1]= nuTot2;
+                    sendableTexture[i*3+2]= nuTot3;
+                }
+                sendableImage.setFromPixels(sendableTexture, 85, 1, OF_IMAGE_COLOR);
+
+                
 				
 				
 				}
@@ -736,7 +772,8 @@ void testApp::draw(){
 	ofSetHexColor(0xffffff);
 	if (showInterface){
 		
-		
+		 sendableImage.draw(0,0,85*10 ,10);
+        
 		ofDrawBitmapString(ofToString((int) ofGetFrameRate()) + " fps", 10, 20);
 		
 		

@@ -7,6 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54E51B7A16809CA9000F9BD8 /* ofxQTKitVideoGrabber.mm in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B7916809CA9000F9BD8 /* ofxQTKitVideoGrabber.mm */; };
+		54E51BAF1680A052000F9BD8 /* ArcBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B7D1680A052000F9BD8 /* ArcBall.cpp */; };
+		54E51BB01680A052000F9BD8 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B7E1680A052000F9BD8 /* Camera.cpp */; };
+		54E51BB11680A052000F9BD8 /* EasyCam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B7F1680A052000F9BD8 /* EasyCam.cpp */; };
+		54E51BB21680A052000F9BD8 /* Axis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B811680A052000F9BD8 /* Axis.cpp */; };
+		54E51BB31680A052000F9BD8 /* Noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B831680A052000F9BD8 /* Noise.cpp */; };
+		54E51BB41680A052000F9BD8 /* StringUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B841680A052000F9BD8 /* StringUtil.cpp */; };
+		54E51BB51680A052000F9BD8 /* Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B851680A052000F9BD8 /* Thread.cpp */; };
+		54E51BB61680A052000F9BD8 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B861680A052000F9BD8 /* Utils.cpp */; };
+		54E51BB71680A052000F9BD8 /* BitmapFont.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B881680A052000F9BD8 /* BitmapFont.cpp */; };
+		54E51BB81680A052000F9BD8 /* DebugDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B891680A052000F9BD8 /* DebugDrawer.cpp */; };
+		54E51BB91680A052000F9BD8 /* Font.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B8A1680A052000F9BD8 /* Font.cpp */; };
+		54E51BBA1680A052000F9BD8 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B8B1680A052000F9BD8 /* Image.cpp */; };
+		54E51BBB1680A052000F9BD8 /* Input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B8C1680A052000F9BD8 /* Input.cpp */; };
+		54E51BBC1680A052000F9BD8 /* SimpleAnim.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B8D1680A052000F9BD8 /* SimpleAnim.cpp */; };
+		54E51BBD1680A052000F9BD8 /* StereoCam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B8E1680A052000F9BD8 /* StereoCam.cpp */; };
+		54E51BBE1680A052000F9BD8 /* Text.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B8F1680A052000F9BD8 /* Text.cpp */; };
+		54E51BBF1680A052000F9BD8 /* TGA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B901680A052000F9BD8 /* TGA.cpp */; };
+		54E51BC01680A052000F9BD8 /* TGARecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B911680A052000F9BD8 /* TGARecorder.cpp */; };
+		54E51BC11680A052000F9BD8 /* Tween.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B921680A052000F9BD8 /* Tween.cpp */; };
+		54E51BC21680A052000F9BD8 /* Tweens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B931680A052000F9BD8 /* Tweens.cpp */; };
+		54E51BC31680A052000F9BD8 /* slre.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B951680A052000F9BD8 /* slre.c */; };
+		54E51BC41680A052000F9BD8 /* stb_image_write.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B961680A052000F9BD8 /* stb_image_write.c */; };
+		54E51BC51680A052000F9BD8 /* stb_textedit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B971680A052000F9BD8 /* stb_textedit.cpp */; };
+		54E51BC61680A052000F9BD8 /* stb_truetype.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B981680A052000F9BD8 /* stb_truetype.c */; };
+		54E51BC71680A052000F9BD8 /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B9A1680A052000F9BD8 /* Buffer.cpp */; };
+		54E51BC81680A052000F9BD8 /* File.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B9B1680A052000F9BD8 /* File.cpp */; };
+		54E51BC91680A052000F9BD8 /* INI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B9C1680A052000F9BD8 /* INI.cpp */; };
+		54E51BCA1680A052000F9BD8 /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B9D1680A052000F9BD8 /* RingBuffer.cpp */; };
+		54E51BCB1680A052000F9BD8 /* Socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51B9E1680A052000F9BD8 /* Socket.cpp */; };
+		54E51BCC1680A052000F9BD8 /* Mat3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BA01680A052000F9BD8 /* Mat3.cpp */; };
+		54E51BCD1680A052000F9BD8 /* Mat4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BA11680A052000F9BD8 /* Mat4.cpp */; };
+		54E51BCE1680A052000F9BD8 /* Quat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BA21680A052000F9BD8 /* Quat.cpp */; };
+		54E51BCF1680A052000F9BD8 /* Vec2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BA31680A052000F9BD8 /* Vec2.cpp */; };
+		54E51BD01680A052000F9BD8 /* Vec3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BA41680A052000F9BD8 /* Vec3.cpp */; };
+		54E51BD11680A052000F9BD8 /* Vec4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BA51680A052000F9BD8 /* Vec4.cpp */; };
+		54E51BD21680A052000F9BD8 /* Billboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BA71680A052000F9BD8 /* Billboard.cpp */; };
+		54E51BD31680A052000F9BD8 /* FBO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BA81680A052000F9BD8 /* FBO.cpp */; };
+		54E51BD41680A052000F9BD8 /* FPS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BA91680A052000F9BD8 /* FPS.cpp */; };
+		54E51BD51680A052000F9BD8 /* MatrixStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BAA1680A052000F9BD8 /* MatrixStack.cpp */; };
+		54E51BD61680A052000F9BD8 /* PBO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BAB1680A052000F9BD8 /* PBO.cpp */; };
+		54E51BD71680A052000F9BD8 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BAC1680A052000F9BD8 /* Shader.cpp */; };
+		54E51BD81680A052000F9BD8 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BAD1680A052000F9BD8 /* Texture.cpp */; };
+		54E51BD91680A052000F9BD8 /* VAO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BAE1680A052000F9BD8 /* VAO.cpp */; };
+		54E51BF11680A129000F9BD8 /* PotatorClientApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BDC1680A129000F9BD8 /* PotatorClientApplication.cpp */; };
+		54E51BF21680A129000F9BD8 /* PotatorData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BDE1680A129000F9BD8 /* PotatorData.cpp */; };
+		54E51BF31680A129000F9BD8 /* PotatorDrawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BE01680A129000F9BD8 /* PotatorDrawer.cpp */; };
+		54E51BF41680A129000F9BD8 /* PotatorLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BE21680A129000F9BD8 /* PotatorLoader.cpp */; };
+		54E51BF51680A129000F9BD8 /* PotatorPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BE41680A129000F9BD8 /* PotatorPlayer.cpp */; };
+		54E51BF61680A129000F9BD8 /* PotatorServerApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BE61680A129000F9BD8 /* PotatorServerApplication.cpp */; };
+		54E51BF71680A129000F9BD8 /* StreamingGeometryClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BE91680A129000F9BD8 /* StreamingGeometryClient.cpp */; };
+		54E51BF81680A129000F9BD8 /* StreamingGeometryServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BEB1680A129000F9BD8 /* StreamingGeometryServer.cpp */; };
+		54E51BF91680A129000F9BD8 /* StreamingPotatorClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BED1680A129000F9BD8 /* StreamingPotatorClient.cpp */; };
+		54E51BFA1680A129000F9BD8 /* StreamingPotatorServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54E51BEF1680A129000F9BD8 /* StreamingPotatorServer.cpp */; };
 		54ED623E167F9AE700EC547F /* ofxBaseMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54ED6232167F9AE700EC547F /* ofxBaseMidi.cpp */; };
 		54ED623F167F9AE700EC547F /* ofxMidi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54ED6234167F9AE700EC547F /* ofxMidi.cpp */; };
 		54ED6240167F9AE700EC547F /* ofxMidiIn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54ED6237167F9AE700EC547F /* ofxMidiIn.cpp */; };
@@ -47,7 +101,6 @@
 		A592FA22159B4859003AE932 /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A592FA14159B4859003AE932 /* ofxOscSender.cpp */; };
 		A5C5CA2A16398FA800BAD1FC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C5CA2916398FA800BAD1FC /* CoreVideo.framework */; };
 		A5E07C16163EC90D00A1E557 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E07C15163EC90D00A1E557 /* QTKit.framework */; };
-		AAAAD6AC167FB0D100174A4A /* ofxQTKitVideoGrabber.mm in Sources */ = {isa = PBXBuildFile; fileRef = AAAAD6AB167FB0D100174A4A /* ofxQTKitVideoGrabber.mm */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -99,6 +152,72 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		54E51B7816809CA9000F9BD8 /* ofxQTKitVideoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxQTKitVideoGrabber.h; path = ofxQTKitVideoGrabber/src/ofxQTKitVideoGrabber.h; sourceTree = SOURCE_ROOT; };
+		54E51B7916809CA9000F9BD8 /* ofxQTKitVideoGrabber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ofxQTKitVideoGrabber.mm; path = ofxQTKitVideoGrabber/src/ofxQTKitVideoGrabber.mm; sourceTree = SOURCE_ROOT; };
+		54E51B7D1680A052000F9BD8 /* ArcBall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArcBall.cpp; sourceTree = "<group>"; };
+		54E51B7E1680A052000F9BD8 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		54E51B7F1680A052000F9BD8 /* EasyCam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EasyCam.cpp; sourceTree = "<group>"; };
+		54E51B811680A052000F9BD8 /* Axis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Axis.cpp; sourceTree = "<group>"; };
+		54E51B831680A052000F9BD8 /* Noise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Noise.cpp; sourceTree = "<group>"; };
+		54E51B841680A052000F9BD8 /* StringUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtil.cpp; sourceTree = "<group>"; };
+		54E51B851680A052000F9BD8 /* Thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Thread.cpp; sourceTree = "<group>"; };
+		54E51B861680A052000F9BD8 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		54E51B881680A052000F9BD8 /* BitmapFont.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BitmapFont.cpp; sourceTree = "<group>"; };
+		54E51B891680A052000F9BD8 /* DebugDrawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugDrawer.cpp; sourceTree = "<group>"; };
+		54E51B8A1680A052000F9BD8 /* Font.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Font.cpp; sourceTree = "<group>"; };
+		54E51B8B1680A052000F9BD8 /* Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		54E51B8C1680A052000F9BD8 /* Input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Input.cpp; sourceTree = "<group>"; };
+		54E51B8D1680A052000F9BD8 /* SimpleAnim.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleAnim.cpp; sourceTree = "<group>"; };
+		54E51B8E1680A052000F9BD8 /* StereoCam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StereoCam.cpp; sourceTree = "<group>"; };
+		54E51B8F1680A052000F9BD8 /* Text.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Text.cpp; sourceTree = "<group>"; };
+		54E51B901680A052000F9BD8 /* TGA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TGA.cpp; sourceTree = "<group>"; };
+		54E51B911680A052000F9BD8 /* TGARecorder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TGARecorder.cpp; sourceTree = "<group>"; };
+		54E51B921680A052000F9BD8 /* Tween.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tween.cpp; sourceTree = "<group>"; };
+		54E51B931680A052000F9BD8 /* Tweens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tweens.cpp; sourceTree = "<group>"; };
+		54E51B951680A052000F9BD8 /* slre.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = slre.c; sourceTree = "<group>"; };
+		54E51B961680A052000F9BD8 /* stb_image_write.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_image_write.c; sourceTree = "<group>"; };
+		54E51B971680A052000F9BD8 /* stb_textedit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stb_textedit.cpp; sourceTree = "<group>"; };
+		54E51B981680A052000F9BD8 /* stb_truetype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stb_truetype.c; sourceTree = "<group>"; };
+		54E51B9A1680A052000F9BD8 /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
+		54E51B9B1680A052000F9BD8 /* File.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = File.cpp; sourceTree = "<group>"; };
+		54E51B9C1680A052000F9BD8 /* INI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = INI.cpp; sourceTree = "<group>"; };
+		54E51B9D1680A052000F9BD8 /* RingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RingBuffer.cpp; sourceTree = "<group>"; };
+		54E51B9E1680A052000F9BD8 /* Socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Socket.cpp; sourceTree = "<group>"; };
+		54E51BA01680A052000F9BD8 /* Mat3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mat3.cpp; sourceTree = "<group>"; };
+		54E51BA11680A052000F9BD8 /* Mat4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mat4.cpp; sourceTree = "<group>"; };
+		54E51BA21680A052000F9BD8 /* Quat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Quat.cpp; sourceTree = "<group>"; };
+		54E51BA31680A052000F9BD8 /* Vec2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vec2.cpp; sourceTree = "<group>"; };
+		54E51BA41680A052000F9BD8 /* Vec3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vec3.cpp; sourceTree = "<group>"; };
+		54E51BA51680A052000F9BD8 /* Vec4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vec4.cpp; sourceTree = "<group>"; };
+		54E51BA71680A052000F9BD8 /* Billboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Billboard.cpp; sourceTree = "<group>"; };
+		54E51BA81680A052000F9BD8 /* FBO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FBO.cpp; sourceTree = "<group>"; };
+		54E51BA91680A052000F9BD8 /* FPS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FPS.cpp; sourceTree = "<group>"; };
+		54E51BAA1680A052000F9BD8 /* MatrixStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MatrixStack.cpp; sourceTree = "<group>"; };
+		54E51BAB1680A052000F9BD8 /* PBO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PBO.cpp; sourceTree = "<group>"; };
+		54E51BAC1680A052000F9BD8 /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		54E51BAD1680A052000F9BD8 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
+		54E51BAE1680A052000F9BD8 /* VAO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VAO.cpp; sourceTree = "<group>"; };
+		54E51BDC1680A129000F9BD8 /* PotatorClientApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PotatorClientApplication.cpp; sourceTree = "<group>"; };
+		54E51BDD1680A129000F9BD8 /* PotatorClientApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotatorClientApplication.h; sourceTree = "<group>"; };
+		54E51BDE1680A129000F9BD8 /* PotatorData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PotatorData.cpp; sourceTree = "<group>"; };
+		54E51BDF1680A129000F9BD8 /* PotatorData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotatorData.h; sourceTree = "<group>"; };
+		54E51BE01680A129000F9BD8 /* PotatorDrawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PotatorDrawer.cpp; sourceTree = "<group>"; };
+		54E51BE11680A129000F9BD8 /* PotatorDrawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotatorDrawer.h; sourceTree = "<group>"; };
+		54E51BE21680A129000F9BD8 /* PotatorLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PotatorLoader.cpp; sourceTree = "<group>"; };
+		54E51BE31680A129000F9BD8 /* PotatorLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotatorLoader.h; sourceTree = "<group>"; };
+		54E51BE41680A129000F9BD8 /* PotatorPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PotatorPlayer.cpp; sourceTree = "<group>"; };
+		54E51BE51680A129000F9BD8 /* PotatorPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotatorPlayer.h; sourceTree = "<group>"; };
+		54E51BE61680A129000F9BD8 /* PotatorServerApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PotatorServerApplication.cpp; sourceTree = "<group>"; };
+		54E51BE71680A129000F9BD8 /* PotatorServerApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotatorServerApplication.h; sourceTree = "<group>"; };
+		54E51BE81680A129000F9BD8 /* PotatorTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PotatorTypes.h; sourceTree = "<group>"; };
+		54E51BE91680A129000F9BD8 /* StreamingGeometryClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamingGeometryClient.cpp; sourceTree = "<group>"; };
+		54E51BEA1680A129000F9BD8 /* StreamingGeometryClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamingGeometryClient.h; sourceTree = "<group>"; };
+		54E51BEB1680A129000F9BD8 /* StreamingGeometryServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamingGeometryServer.cpp; sourceTree = "<group>"; };
+		54E51BEC1680A129000F9BD8 /* StreamingGeometryServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamingGeometryServer.h; sourceTree = "<group>"; };
+		54E51BED1680A129000F9BD8 /* StreamingPotatorClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamingPotatorClient.cpp; sourceTree = "<group>"; };
+		54E51BEE1680A129000F9BD8 /* StreamingPotatorClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamingPotatorClient.h; sourceTree = "<group>"; };
+		54E51BEF1680A129000F9BD8 /* StreamingPotatorServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamingPotatorServer.cpp; sourceTree = "<group>"; };
+		54E51BF01680A129000F9BD8 /* StreamingPotatorServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamingPotatorServer.h; sourceTree = "<group>"; };
 		54ED6232167F9AE700EC547F /* ofxBaseMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxBaseMidi.cpp; path = ofxMidi/src/ofxBaseMidi.cpp; sourceTree = SOURCE_ROOT; };
 		54ED6233167F9AE700EC547F /* ofxBaseMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxBaseMidi.h; path = ofxMidi/src/ofxBaseMidi.h; sourceTree = SOURCE_ROOT; };
 		54ED6234167F9AE700EC547F /* ofxMidi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxMidi.cpp; path = ofxMidi/src/ofxMidi.cpp; sourceTree = SOURCE_ROOT; };
@@ -217,10 +336,6 @@
 		A5C5CA2916398FA800BAD1FC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		A5E07C15163EC90D00A1E557 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
 		A5FC6FF516060A1B00734798 /* kwast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kwast.h; sourceTree = "<group>"; };
-		AAAAD6A7167FB0D100174A4A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		AAAAD6A8167FB0D100174A4A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		AAAAD6AA167FB0D100174A4A /* ofxQTKitVideoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxQTKitVideoGrabber.h; sourceTree = "<group>"; };
-		AAAAD6AB167FB0D100174A4A /* ofxQTKitVideoGrabber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxQTKitVideoGrabber.mm; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -278,6 +393,162 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54E51B7B1680A041000F9BD8 /* roxlu */ = {
+			isa = PBXGroup;
+			children = (
+				54E51B7C1680A052000F9BD8 /* 3d */,
+				54E51B821680A052000F9BD8 /* core */,
+				54E51B871680A052000F9BD8 /* experimental */,
+				54E51B941680A052000F9BD8 /* external */,
+				54E51B991680A052000F9BD8 /* io */,
+				54E51B9F1680A052000F9BD8 /* math */,
+				54E51BA61680A052000F9BD8 /* opengl */,
+			);
+			name = roxlu;
+			sourceTree = "<group>";
+		};
+		54E51B7C1680A052000F9BD8 /* 3d */ = {
+			isa = PBXGroup;
+			children = (
+				54E51B7D1680A052000F9BD8 /* ArcBall.cpp */,
+				54E51B7E1680A052000F9BD8 /* Camera.cpp */,
+				54E51B7F1680A052000F9BD8 /* EasyCam.cpp */,
+				54E51B801680A052000F9BD8 /* shapes */,
+			);
+			name = 3d;
+			path = roxlu/lib/src/roxlu/3d;
+			sourceTree = "<group>";
+		};
+		54E51B801680A052000F9BD8 /* shapes */ = {
+			isa = PBXGroup;
+			children = (
+				54E51B811680A052000F9BD8 /* Axis.cpp */,
+			);
+			path = shapes;
+			sourceTree = "<group>";
+		};
+		54E51B821680A052000F9BD8 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				54E51B831680A052000F9BD8 /* Noise.cpp */,
+				54E51B841680A052000F9BD8 /* StringUtil.cpp */,
+				54E51B851680A052000F9BD8 /* Thread.cpp */,
+				54E51B861680A052000F9BD8 /* Utils.cpp */,
+			);
+			name = core;
+			path = roxlu/lib/src/roxlu/core;
+			sourceTree = "<group>";
+		};
+		54E51B871680A052000F9BD8 /* experimental */ = {
+			isa = PBXGroup;
+			children = (
+				54E51B881680A052000F9BD8 /* BitmapFont.cpp */,
+				54E51B891680A052000F9BD8 /* DebugDrawer.cpp */,
+				54E51B8A1680A052000F9BD8 /* Font.cpp */,
+				54E51B8B1680A052000F9BD8 /* Image.cpp */,
+				54E51B8C1680A052000F9BD8 /* Input.cpp */,
+				54E51B8D1680A052000F9BD8 /* SimpleAnim.cpp */,
+				54E51B8E1680A052000F9BD8 /* StereoCam.cpp */,
+				54E51B8F1680A052000F9BD8 /* Text.cpp */,
+				54E51B901680A052000F9BD8 /* TGA.cpp */,
+				54E51B911680A052000F9BD8 /* TGARecorder.cpp */,
+				54E51B921680A052000F9BD8 /* Tween.cpp */,
+				54E51B931680A052000F9BD8 /* Tweens.cpp */,
+			);
+			name = experimental;
+			path = roxlu/lib/src/roxlu/experimental;
+			sourceTree = "<group>";
+		};
+		54E51B941680A052000F9BD8 /* external */ = {
+			isa = PBXGroup;
+			children = (
+				54E51B951680A052000F9BD8 /* slre.c */,
+				54E51B961680A052000F9BD8 /* stb_image_write.c */,
+				54E51B971680A052000F9BD8 /* stb_textedit.cpp */,
+				54E51B981680A052000F9BD8 /* stb_truetype.c */,
+			);
+			name = external;
+			path = roxlu/lib/src/roxlu/external;
+			sourceTree = "<group>";
+		};
+		54E51B991680A052000F9BD8 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				54E51B9A1680A052000F9BD8 /* Buffer.cpp */,
+				54E51B9B1680A052000F9BD8 /* File.cpp */,
+				54E51B9C1680A052000F9BD8 /* INI.cpp */,
+				54E51B9D1680A052000F9BD8 /* RingBuffer.cpp */,
+				54E51B9E1680A052000F9BD8 /* Socket.cpp */,
+			);
+			name = io;
+			path = roxlu/lib/src/roxlu/io;
+			sourceTree = "<group>";
+		};
+		54E51B9F1680A052000F9BD8 /* math */ = {
+			isa = PBXGroup;
+			children = (
+				54E51BA01680A052000F9BD8 /* Mat3.cpp */,
+				54E51BA11680A052000F9BD8 /* Mat4.cpp */,
+				54E51BA21680A052000F9BD8 /* Quat.cpp */,
+				54E51BA31680A052000F9BD8 /* Vec2.cpp */,
+				54E51BA41680A052000F9BD8 /* Vec3.cpp */,
+				54E51BA51680A052000F9BD8 /* Vec4.cpp */,
+			);
+			name = math;
+			path = roxlu/lib/src/roxlu/math;
+			sourceTree = "<group>";
+		};
+		54E51BA61680A052000F9BD8 /* opengl */ = {
+			isa = PBXGroup;
+			children = (
+				54E51BA71680A052000F9BD8 /* Billboard.cpp */,
+				54E51BA81680A052000F9BD8 /* FBO.cpp */,
+				54E51BA91680A052000F9BD8 /* FPS.cpp */,
+				54E51BAA1680A052000F9BD8 /* MatrixStack.cpp */,
+				54E51BAB1680A052000F9BD8 /* PBO.cpp */,
+				54E51BAC1680A052000F9BD8 /* Shader.cpp */,
+				54E51BAD1680A052000F9BD8 /* Texture.cpp */,
+				54E51BAE1680A052000F9BD8 /* VAO.cpp */,
+			);
+			name = opengl;
+			path = roxlu/lib/src/roxlu/opengl;
+			sourceTree = "<group>";
+		};
+		54E51BDB1680A129000F9BD8 /* potator */ = {
+			isa = PBXGroup;
+			children = (
+				54E51BDC1680A129000F9BD8 /* PotatorClientApplication.cpp */,
+				54E51BDD1680A129000F9BD8 /* PotatorClientApplication.h */,
+				54E51BDE1680A129000F9BD8 /* PotatorData.cpp */,
+				54E51BDF1680A129000F9BD8 /* PotatorData.h */,
+				54E51BE01680A129000F9BD8 /* PotatorDrawer.cpp */,
+				54E51BE11680A129000F9BD8 /* PotatorDrawer.h */,
+				54E51BE21680A129000F9BD8 /* PotatorLoader.cpp */,
+				54E51BE31680A129000F9BD8 /* PotatorLoader.h */,
+				54E51BE41680A129000F9BD8 /* PotatorPlayer.cpp */,
+				54E51BE51680A129000F9BD8 /* PotatorPlayer.h */,
+				54E51BE61680A129000F9BD8 /* PotatorServerApplication.cpp */,
+				54E51BE71680A129000F9BD8 /* PotatorServerApplication.h */,
+				54E51BE81680A129000F9BD8 /* PotatorTypes.h */,
+				54E51BE91680A129000F9BD8 /* StreamingGeometryClient.cpp */,
+				54E51BEA1680A129000F9BD8 /* StreamingGeometryClient.h */,
+				54E51BEB1680A129000F9BD8 /* StreamingGeometryServer.cpp */,
+				54E51BEC1680A129000F9BD8 /* StreamingGeometryServer.h */,
+				54E51BED1680A129000F9BD8 /* StreamingPotatorClient.cpp */,
+				54E51BEE1680A129000F9BD8 /* StreamingPotatorClient.h */,
+				54E51BEF1680A129000F9BD8 /* StreamingPotatorServer.cpp */,
+				54E51BF01680A129000F9BD8 /* StreamingPotatorServer.h */,
+			);
+			path = potator;
+			sourceTree = "<group>";
+		};
+		54E51BFD1680B44C000F9BD8 /* roxlu_libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = roxlu_libs;
+			sourceTree = "<group>";
+		};
 		54ED624D167F9B5900EC547F /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,8 +918,6 @@
 		AAAAD6A6167FB0D100174A4A /* ofxQTKitVideoGrabber */ = {
 			isa = PBXGroup;
 			children = (
-				AAAAD6A7167FB0D100174A4A /* .gitignore */,
-				AAAAD6A8167FB0D100174A4A /* README */,
 				AAAAD6A9167FB0D100174A4A /* src */,
 			);
 			name = ofxQTKitVideoGrabber;
@@ -658,8 +927,8 @@
 		AAAAD6A9167FB0D100174A4A /* src */ = {
 			isa = PBXGroup;
 			children = (
-				AAAAD6AA167FB0D100174A4A /* ofxQTKitVideoGrabber.h */,
-				AAAAD6AB167FB0D100174A4A /* ofxQTKitVideoGrabber.mm */,
+				54E51B7816809CA9000F9BD8 /* ofxQTKitVideoGrabber.h */,
+				54E51B7916809CA9000F9BD8 /* ofxQTKitVideoGrabber.mm */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -667,6 +936,8 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				54E51BFD1680B44C000F9BD8 /* roxlu_libs */,
+				54E51B7B1680A041000F9BD8 /* roxlu */,
 				AAAAD6A6167FB0D100174A4A /* ofxQTKitVideoGrabber */,
 				A5C2BA08166401120054E4AE /* ofxSyphon */,
 				A55CD7DB15F8E1D000B7FA07 /* ofxMidi */,
@@ -739,6 +1010,7 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				54E51BDB1680A129000F9BD8 /* potator */,
 				A5FC6FF516060A1B00734798 /* kwast.h */,
 				A51BC7581576718C00F43E4D /* saus.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
@@ -875,7 +1147,60 @@
 				54ED6253167F9B5900EC547F /* ofxSyphonClient.mm in Sources */,
 				54ED6254167F9B5900EC547F /* ofxSyphonServer.mm in Sources */,
 				54ED625A167F9CC000EC547F /* SyphonNameboundClient.m in Sources */,
-				AAAAD6AC167FB0D100174A4A /* ofxQTKitVideoGrabber.mm in Sources */,
+				54E51B7A16809CA9000F9BD8 /* ofxQTKitVideoGrabber.mm in Sources */,
+				54E51BAF1680A052000F9BD8 /* ArcBall.cpp in Sources */,
+				54E51BB01680A052000F9BD8 /* Camera.cpp in Sources */,
+				54E51BB11680A052000F9BD8 /* EasyCam.cpp in Sources */,
+				54E51BB21680A052000F9BD8 /* Axis.cpp in Sources */,
+				54E51BB31680A052000F9BD8 /* Noise.cpp in Sources */,
+				54E51BB41680A052000F9BD8 /* StringUtil.cpp in Sources */,
+				54E51BB51680A052000F9BD8 /* Thread.cpp in Sources */,
+				54E51BB61680A052000F9BD8 /* Utils.cpp in Sources */,
+				54E51BB71680A052000F9BD8 /* BitmapFont.cpp in Sources */,
+				54E51BB81680A052000F9BD8 /* DebugDrawer.cpp in Sources */,
+				54E51BB91680A052000F9BD8 /* Font.cpp in Sources */,
+				54E51BBA1680A052000F9BD8 /* Image.cpp in Sources */,
+				54E51BBB1680A052000F9BD8 /* Input.cpp in Sources */,
+				54E51BBC1680A052000F9BD8 /* SimpleAnim.cpp in Sources */,
+				54E51BBD1680A052000F9BD8 /* StereoCam.cpp in Sources */,
+				54E51BBE1680A052000F9BD8 /* Text.cpp in Sources */,
+				54E51BBF1680A052000F9BD8 /* TGA.cpp in Sources */,
+				54E51BC01680A052000F9BD8 /* TGARecorder.cpp in Sources */,
+				54E51BC11680A052000F9BD8 /* Tween.cpp in Sources */,
+				54E51BC21680A052000F9BD8 /* Tweens.cpp in Sources */,
+				54E51BC31680A052000F9BD8 /* slre.c in Sources */,
+				54E51BC41680A052000F9BD8 /* stb_image_write.c in Sources */,
+				54E51BC51680A052000F9BD8 /* stb_textedit.cpp in Sources */,
+				54E51BC61680A052000F9BD8 /* stb_truetype.c in Sources */,
+				54E51BC71680A052000F9BD8 /* Buffer.cpp in Sources */,
+				54E51BC81680A052000F9BD8 /* File.cpp in Sources */,
+				54E51BC91680A052000F9BD8 /* INI.cpp in Sources */,
+				54E51BCA1680A052000F9BD8 /* RingBuffer.cpp in Sources */,
+				54E51BCB1680A052000F9BD8 /* Socket.cpp in Sources */,
+				54E51BCC1680A052000F9BD8 /* Mat3.cpp in Sources */,
+				54E51BCD1680A052000F9BD8 /* Mat4.cpp in Sources */,
+				54E51BCE1680A052000F9BD8 /* Quat.cpp in Sources */,
+				54E51BCF1680A052000F9BD8 /* Vec2.cpp in Sources */,
+				54E51BD01680A052000F9BD8 /* Vec3.cpp in Sources */,
+				54E51BD11680A052000F9BD8 /* Vec4.cpp in Sources */,
+				54E51BD21680A052000F9BD8 /* Billboard.cpp in Sources */,
+				54E51BD31680A052000F9BD8 /* FBO.cpp in Sources */,
+				54E51BD41680A052000F9BD8 /* FPS.cpp in Sources */,
+				54E51BD51680A052000F9BD8 /* MatrixStack.cpp in Sources */,
+				54E51BD61680A052000F9BD8 /* PBO.cpp in Sources */,
+				54E51BD71680A052000F9BD8 /* Shader.cpp in Sources */,
+				54E51BD81680A052000F9BD8 /* Texture.cpp in Sources */,
+				54E51BD91680A052000F9BD8 /* VAO.cpp in Sources */,
+				54E51BF11680A129000F9BD8 /* PotatorClientApplication.cpp in Sources */,
+				54E51BF21680A129000F9BD8 /* PotatorData.cpp in Sources */,
+				54E51BF31680A129000F9BD8 /* PotatorDrawer.cpp in Sources */,
+				54E51BF41680A129000F9BD8 /* PotatorLoader.cpp in Sources */,
+				54E51BF51680A129000F9BD8 /* PotatorPlayer.cpp in Sources */,
+				54E51BF61680A129000F9BD8 /* PotatorServerApplication.cpp in Sources */,
+				54E51BF71680A129000F9BD8 /* StreamingGeometryClient.cpp in Sources */,
+				54E51BF81680A129000F9BD8 /* StreamingGeometryServer.cpp in Sources */,
+				54E51BF91680A129000F9BD8 /* StreamingPotatorClient.cpp in Sources */,
+				54E51BFA1680A129000F9BD8 /* StreamingPotatorServer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,6 +1326,27 @@
 				GCC_MODEL_TUNING = G4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_PREPROCESSOR_DEFINITIONS = "ROXLU_GL_WRAPPER=ROXLU_OPENFRAMEWORKS";
+				HEADER_SEARCH_PATHS = (
+					../../../addons/ofxMidi/src,
+					../../../addons/ofxMidi/src/desktop/rtmidi,
+					src,
+					"$(OF_CORE_HEADERS)",
+					"$(OF_PATH)/addons/ofxOsc/src",
+					"$(OF_PATH)/addons/ofxOsc/libs/oscpack/include/ip",
+					"$(OF_PATH)/addons/ofxOsc/libs/oscpack/include/osc",
+					../../../addons/ofxOsc/libs,
+					../../../addons/ofxOsc/libs/oscpack/src/ip,
+					../../../addons/ofxOsc/libs/oscpack/src/ip/posix,
+					../../../addons/ofxOsc/src,
+					../../../addons/ofxOsc/libs/oscpack/src,
+					../../../addons/ofxOsc/libs/oscpack,
+					../../../addons/ofxOsc/libs/oscpack/src/ip/win32,
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"./roxlu/lib/include\"";
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"./roxlu/extern/include\"";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
@@ -1077,10 +1423,16 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/linux64\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/vs2008\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/vs2010\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12 = "\"$(SRCROOT)/roxlu/extern/lib/mac/64\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13 = "\"$(SRCROOT)/../../../../addons_diederick/roxlu/extern/lib/mac/32\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14 = "\"$(SRCROOT)/../../../../addons_diederick/roxlu/extern/lib/mac/32\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/vs2008\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/vs2010\"";
@@ -1089,6 +1441,11 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 = "\"$(SRCROOT)/../../../addons/ofxBullet/libs/bullet/lib/osx/Release\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/linux64\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/osx\"";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"$(OTHER_LDFLAGS_QUOTED_FOR_TARGET_1)",
+				);
+				OTHER_LDFLAGS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../addons_diederick/roxlu/extern/lib/mac/32/libuv.a\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = thePotatorQTworksDebug;
 				WRAPPER_EXTENSION = app;
@@ -1113,6 +1470,27 @@
 				GCC_MODEL_TUNING = G4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				GCC_PREPROCESSOR_DEFINITIONS = "ROXLU_GL_WRAPPER=ROXLU_OPENFRAMEWORKS";
+				HEADER_SEARCH_PATHS = (
+					../../../addons/ofxMidi/src,
+					../../../addons/ofxMidi/src/desktop/rtmidi,
+					src,
+					"$(OF_CORE_HEADERS)",
+					"$(OF_PATH)/addons/ofxOsc/src",
+					"$(OF_PATH)/addons/ofxOsc/libs/oscpack/include/ip",
+					"$(OF_PATH)/addons/ofxOsc/libs/oscpack/include/osc",
+					../../../addons/ofxOsc/libs,
+					../../../addons/ofxOsc/libs/oscpack/src/ip,
+					../../../addons/ofxOsc/libs/oscpack/src/ip/posix,
+					../../../addons/ofxOsc/src,
+					../../../addons/ofxOsc/libs/oscpack/src,
+					../../../addons/ofxOsc/libs/oscpack,
+					../../../addons/ofxOsc/libs/oscpack/src/ip/win32,
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+				);
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"./roxlu/lib/include\"";
+				HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"./roxlu/extern/include\"";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = (
@@ -1189,6 +1567,9 @@
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
 				);
 				LIBRARY_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/linux64\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_2 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/osx\"";
@@ -1201,6 +1582,14 @@
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/osx\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/vs2008\"";
 				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 = "\"$(SRCROOT)/ofxGamepad/libs/wgois/lib/vs2010\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 = "\"$(SRCROOT)/roxlu/extern/lib/mac/64\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 = "\"$(SRCROOT)/../../../../addons_diederick/roxlu/extern/lib/mac/32\"";
+				LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 = "\"$(SRCROOT)/../../../../addons_diederick/roxlu/extern/lib/mac/32\"";
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					"$(OTHER_LDFLAGS_QUOTED_FOR_TARGET_1)",
+				);
+				OTHER_LDFLAGS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../addons_diederick/roxlu/extern/lib/mac/32/libuv.a\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = thePotatorQTworks;
 				WRAPPER_EXTENSION = app;

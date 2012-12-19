@@ -14,7 +14,7 @@ void testApp::setup(){
     bigCharTexture = new unsigned char[camWidth*picHi*3];
     bigVideoTexture.allocate(camWidth,picHi, GL_RGB);
     dir.allowExt("txt");
-    dir.listDir("/Users/keezpips/Desktop/3d/");
+    dir.listDir("/Users/keezpipslab/Desktop/3d/");
 		
     nuImage.allocate(camWidth, picHi, OF_IMAGE_COLOR);
 	
@@ -24,7 +24,7 @@ void testApp::setup(){
     bigCharTexture = new unsigned char[6*camWidth*picHi*3];
     bigVideoTexture.allocate(6*camWidth,picHi, GL_RGB);
     dir.allowExt("txt");
-    dir.listDir("/Users/keezpips/Desktop/3dfat/");
+    dir.listDir("/Users/keezpipslab/Desktop/3dfat/");
 		
     nuImage.allocate(camWidth * 6, picHi, OF_IMAGE_COLOR);
   }		
@@ -128,7 +128,7 @@ void testApp::setup(){
   externalCam = true;
 	
   flowTexture= false;
-  showInterface= true;
+  showInterface= false;
   butterflyOn= false;
   sausageOn= false;
   bubbleOn= false;
@@ -170,7 +170,7 @@ void testApp::setup(){
 	
 		
   //dir.allowExt("txt");
-  //dir.listDir("/Users/keezpips/Desktop/3d/");
+  //dir.listDir("/Users/keezpipslab/Desktop/3d/");
   dir.sort(); // in linux the file system doesn't return file lists ordered in alphabetical order
 
   dirTeller=0;
@@ -796,7 +796,6 @@ void testApp::draw(){
   float cy = img.height/2;    
 	
 	
-	
   cam.begin();
 	 
   ofPushMatrix();         // push the current coordinate position
@@ -1080,8 +1079,8 @@ void testApp::draw(){
 void testApp::sendViaRoxlu(){
   // @roxlu
 
-  ofVec3f p1 = pts.back(); //rigidZasd1.getGlobalPosition();
-  ofVec3f p2 = pts2.back(); //rigidZasd2.getGlobalPosition();
+  ofVec3f p1 = pts.back() / 200.0; //rigidZasd1.getGlobalPosition();
+  ofVec3f p2 = pts2.back()  / 200.0;; //rigidZasd2.getGlobalPosition();
   server.streaming_potator.sendVertexPositions(p1.x, p1.y, p1.z, p2.x, p2.y, p2.z, currentLine);
   server.streaming_potator.sendTextureLine(
                                          currentLine,
@@ -1696,8 +1695,8 @@ void testApp::skipToProject(){
 
 string testApp::openProject(string filePart){
 	
-  //ofBuffer buffer = ofBufferFromFile("/Users/keezpips/Desktop/3d/vectordata_" + filePart + ".txt"); // reading into the buffer
-  ofBuffer buffer = ofBufferFromFile("/Users/keezpips/Desktop/3d/vectordata_20120606231847.txt"); // reading into the buffer
+  //ofBuffer buffer = ofBufferFromFile("/Users/keezpipslab/Desktop/3d/vectordata_" + filePart + ".txt"); // reading into the buffer
+  ofBuffer buffer = ofBufferFromFile("/Users/keezpipslab/Desktop/3d/vectordata_20120606231847.txt"); // reading into the buffer
   string data= buffer.getText(); // let's see what it says
 	
   cout << data << "\n";
@@ -1735,13 +1734,13 @@ string testApp::openProject(string filePart){
     }
 		
 	
-  //nuImage.loadImage("/Users/keezpips/Desktop/3d/img20120606231847.png");
+  //nuImage.loadImage("/Users/keezpipslab/Desktop/3d/img20120606231847.png");
 	
-  cout << "/Users/keezpips/Desktop/3d/img" + filePart + ".png" + "\n";
+  cout << "/Users/keezpipslab/Desktop/3d/img" + filePart + ".png" + "\n";
   /*
 	 
     ofImage nuImage;
-    nuImage.loadImage("/Users/keezpips/Desktop/3d/img" + filePart + ".png");
+    nuImage.loadImage("/Users/keezpipslab/Desktop/3d/img" + filePart + ".png");
     unsigned char * pixels2 = nuImage.getPixels();
 
     for (int w= 0; w<camWidth; w++) {
@@ -1772,8 +1771,8 @@ string testApp::openProject2(){
 	
 	
   string filePart = naam.substr(11, naam.length());
-  ofBuffer buffer = ofBufferFromFile("/Users/keezpips/Desktop/3d/vectordata_" + filePart + ".txt"); // reading into the buffer
-  //ofBuffer buffer = ofBufferFromFile("/Users/keezpips/Desktop/3d/vectordata_20120606231847.txt"); // reading into the buffer
+  ofBuffer buffer = ofBufferFromFile("/Users/keezpipslab/Desktop/3d/vectordata_" + filePart + ".txt"); // reading into the buffer
+  //ofBuffer buffer = ofBufferFromFile("/Users/keezpipslab/Desktop/3d/vectordata_20120606231847.txt"); // reading into the buffer
   string data= buffer.getText(); // let's see what it says
   vector<string> lines = ofSplitString(data, "\n", true, true);
 	
@@ -1814,11 +1813,11 @@ string testApp::openProject2(){
 		
     }
 	
-  cout << "/Users/keezpips/Desktop/3d/img" + filePart + ".png" + "\n";
+  cout << "/Users/keezpipslab/Desktop/3d/img" + filePart + ".png" + "\n";
 	
 	 
 	
-  nuImage.loadImage("/Users/keezpips/Desktop/3d/img" + filePart + ".png");
+  nuImage.loadImage("/Users/keezpipslab/Desktop/3d/img" + filePart + ".png");
   unsigned char * pixels2 = nuImage.getPixels();
 	 
   for (int w= 0; w<camWidth; w++) {
@@ -1850,9 +1849,9 @@ string testApp::openProject2fat(){
   string filePart = naam.substr(11, naam.length());
 	
 	
-  cout << "filetoopen " << "/Users/keezpips/Desktop/3dfat/vectordata_" + filePart + ".txt" << "\n";
-  ofBuffer buffer = ofBufferFromFile("/Users/keezpips/Desktop/3dfat/vectordata_" + filePart + ".txt"); // reading into the buffer
-  //ofBuffer buffer = ofBufferFromFile("/Users/keezpips/Desktop/3d/vectordata_20120606231847.txt"); // reading into the buffer
+  cout << "filetoopen " << "/Users/keezpipslab/Desktop/3dfat/vectordata_" + filePart + ".txt" << "\n";
+  ofBuffer buffer = ofBufferFromFile("/Users/keezpipslab/Desktop/3dfat/vectordata_" + filePart + ".txt"); // reading into the buffer
+  //ofBuffer buffer = ofBufferFromFile("/Users/keezpipslab/Desktop/3d/vectordata_20120606231847.txt"); // reading into the buffer
   string data= buffer.getText(); // let's see what it says
   vector<string> lines = ofSplitString(data, "\n", true, true);
 	
@@ -1898,11 +1897,11 @@ string testApp::openProject2fat(){
 		
     }
   cout << "loaded\n";
-  cout << "/Users/keezpips/Desktop/3dfat/img" + filePart + ".png" + "\n";
+  cout << "/Users/keezpipslab/Desktop/3dfat/img" + filePart + ".png" + "\n";
 	
 	
 	
-  nuImage.loadImage("/Users/keezpips/Desktop/3dfat/img" + filePart + ".png");
+  nuImage.loadImage("/Users/keezpipslab/Desktop/3dfat/img" + filePart + ".png");
   unsigned char * pixels2 = nuImage.getPixels();
 	
   for (int w= 0; w<(camWidth*6); w++) {
@@ -1935,7 +1934,7 @@ void testApp::saveAll(){
   ofstream myfile;
   string daat = getDateName().c_str(); 
   string vecnaam;
-  vecnaam= "/Users/keezpips/Desktop/3d/vectordata_" + daat + ".txt"; 
+  vecnaam= "/Users/keezpipslab/Desktop/3d/vectordata_" + daat + ".txt"; 
   cout << vecnaam;
   string imgnaam= "img" + daat;
   myfile.open(vecnaam.c_str());
@@ -1959,7 +1958,7 @@ void testApp::saveAll(){
   temp.setFromPixels(bigCharTexture,camWidth, picHi, OF_IMAGE_COLOR);
 	
 	
-  temp.saveImage("/Users/keezpips/Desktop/3d/" + imgnaam + ".png");
+  temp.saveImage("/Users/keezpipslab/Desktop/3d/" + imgnaam + ".png");
   //ofPixels saver;
   //ofSaveImage(ofPixels &pix, ", ofImageQualityType qualityLevel=OF_IMAGE_QUALITY_BEST)
   //saver.setFromPixels(bigCharTexture,)
@@ -1971,7 +1970,7 @@ void testApp::saveAllfat(){
   ofstream myfile;
   string daat = getDateName().c_str(); 
   string vecnaam;
-  vecnaam= "/Users/keezpips/Desktop/3dfat/vectordata_" + daat + ".txt"; 
+  vecnaam= "/Users/keezpipslab/Desktop/3dfat/vectordata_" + daat + ".txt"; 
   cout << vecnaam;
   string imgnaam= "img" + daat;
   myfile.open(vecnaam.c_str());
@@ -1995,7 +1994,7 @@ void testApp::saveAllfat(){
   //temp.setFromPixels(bigCharTexture,camWidth, picHi, OF_IMAGE_COLOR);
   temp.setFromPixels(bigCharTexture,camWidth*6, picHi, OF_IMAGE_COLOR);
 	
-  temp.saveImage("/Users/keezpips/Desktop/3dfat/" + imgnaam + ".png");
+  temp.saveImage("/Users/keezpipslab/Desktop/3dfat/" + imgnaam + ".png");
   //ofPixels saver;
   //ofSaveImage(ofPixels &pix, ", ofImageQualityType qualityLevel=OF_IMAGE_QUALITY_BEST)
   //saver.setFromPixels(bigCharTexture,)
@@ -2008,7 +2007,7 @@ void testApp::saveAllXML(){
   ofstream myfile;
   string daat = getDateName().c_str(); 
   string vecnaam;
-  vecnaam= "/Users/keezpips/Desktop/3dxml/xmldata_" + daat + ".xml"; 
+  vecnaam= "/Users/keezpipslab/Desktop/3dxml/xmldata_" + daat + ".xml"; 
   cout << vecnaam;
   string imgnaam= "img" + daat;
   myfile.open(vecnaam.c_str());
@@ -2033,7 +2032,7 @@ void testApp::saveAllXML(){
   temp.setFromPixels(bigCharTexture,camWidth, picHi, OF_IMAGE_COLOR);
   //scannedImage
 	
-  temp.saveImage("/Users/keezpips/Desktop/3dxml/" + imgnaam + ".png");
+  temp.saveImage("/Users/keezpipslab/Desktop/3dxml/" + imgnaam + ".png");
   //ofPixels saver;
   //ofSaveImage(ofPixels &pix, ", ofImageQualityType qualityLevel=OF_IMAGE_QUALITY_BEST)
   //saver.setFromPixels(bigCharTexture,)
@@ -2046,8 +2045,8 @@ void testApp::export2Json(){  // attempt 2 // dubbele input
   ofstream myfile;
   string daat = getDateName().c_str(); 
   string vecnaam;
-  //vecnaam= "/Users/keezpips/Desktop/3dxml/json_" + daat + ".json"; 
-  vecnaam= "/Users/keezpips/Sites/webgl_lessons/keez_vj/" + daat + "json.json";
+  //vecnaam= "/Users/keezpipslab/Desktop/3dxml/json_" + daat + ".json"; 
+  vecnaam= "/Users/keezpipslab/Sites/webgl_lessons/keez_vj/" + daat + "json.json";
 	
   cout << vecnaam << "\n";
   //string imgnaam= "img" + daat;
@@ -2195,8 +2194,8 @@ void testApp::export2Json(){  // attempt 2 // dubbele input
   temp.setFromPixels(bigCharTexture,camWidth, picHi, OF_IMAGE_COLOR);
   temp.resize(128,2048);
 	
-  temp.saveImage("/Users/keezpips/Sites/webgl_lessons/keez_gl/" + imgnaam + ".jpg");
-  temp.saveImage("/Users/keezpips/Sites/webgl_lessons/keez_vj/texture.jpg");
+  temp.saveImage("/Users/keezpipslab/Sites/webgl_lessons/keez_gl/" + imgnaam + ".jpg");
+  temp.saveImage("/Users/keezpipslab/Sites/webgl_lessons/keez_vj/texture.jpg");
 	
 }
 

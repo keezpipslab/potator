@@ -17,7 +17,7 @@
 // listen on port 12345
 #define PORT 6000
 #define NUM_MSG_STRINGS 20
-#define HOST "192.168.0.20"
+#define HOST "192.168.0.19"
 
 
 struct posquad {

@@ -11,7 +11,7 @@ void Simulation::setup() {
   cam.setup(width, height);
   cam.translate(0.0f, 0.0f, 10.0f);
   ax.setup(10);
-  app.setup("192.168.0.2 1", "3344"); // DIT ADRES MOET VERWIJZEN NAAR DE MOCAP-SERVER APPLICATIE
+  app.setup("192.168.1.41", "3344"); // DIT ADRES MOET VERWIJZEN NAAR DE MOCAP-SERVER APPLICATIE
 }
 
 void Simulation::update() {

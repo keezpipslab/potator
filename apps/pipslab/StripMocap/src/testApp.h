@@ -261,5 +261,6 @@ class testApp : public ofBaseApp , public ofxMidiListener {
   unsigned char *  sendableTexture;
 
   PotatorServerApplication server;
+  void sendViaRoxlu();
 	
 };

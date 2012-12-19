@@ -753,16 +753,11 @@ void testApp::update(){
           sendableTexture[i*3]= nuTot1;
           sendableTexture[i*3+1]= nuTot2;
           sendableTexture[i*3+2]= nuTot3;
+          
         }
         sendableImage.setFromPixels(sendableTexture, 85, 1, OF_IMAGE_COLOR);
 
-        // @roxlu
-        int current_line_number = 0; // @todo what variable to use for the curr line?
-        server.streaming_potator.sendTextureLine(
-                                                 current_line_number, 
-                                                 (unsigned char*)sendableImage.getPixels(), 
-                                                 85 * 3
-                                                 );
+        
                 
 				
 				
@@ -1002,10 +997,17 @@ void testApp::draw(){
     pts.push_back(rigidZasd1.getGlobalPosition());
     pts2.push_back(rigidZasd2.getGlobalPosition());
 		
-		
-		
-		
     texturePts.push_back(currentLine);
+    
+    
+   sendViaRoxlu();
+    // @roxlu
+    int current_line_number = currentLine; // @todo what variable to use for the curr line?
+    server.streaming_potator.sendTextureLine(
+                                             current_line_number,
+                                             sendableTexture,
+                                             85 * 3
+                                             );
 		
   }
 	
@@ -1075,6 +1077,19 @@ void testApp::draw(){
   syphOut.publishScreen();
 
 	
+}
+
+
+void testApp::sendViaRoxlu(){
+  // @roxlu
+  ofPoint& p1 = rigidZads1.getGlobalPosition();
+  ofPoint& p2 = rigidZads2.getGlobalPosition();
+  server.streaming_potator.sendVertexPositions(p1.x, p1.y, p1.z, p2.x, p2.y, p2.z, currentLine);
+  server.streaming_potator.sendTextureLine(
+                                         currentLine,
+                                         sendableTexture,
+                                         85 * 3
+                                         );
 }
 
 void testApp::doPlaatje(){

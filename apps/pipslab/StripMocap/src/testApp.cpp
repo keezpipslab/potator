@@ -56,7 +56,7 @@ void testApp::setup(){
 	
   vidGrabber.setVerbose(true);
   //	
-  vidGrabber.setDeviceID(19);
+  vidGrabber.setDeviceID(1);
   //	
   //	vidGrabber.initGrabber(camWidth,camHeight);
   vidGrabber.initRecording();							// call this to init recording output 
@@ -1291,7 +1291,7 @@ void testApp::keyPressed  (int key){
 			
     case 'n':
       newField();
-			
+			server.reset();
       break;
     case 'p':
       if (singleField){

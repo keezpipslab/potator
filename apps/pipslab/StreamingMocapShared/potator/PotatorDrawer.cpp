@@ -160,6 +160,8 @@ void PotatorDrawer::createTexture(int w, int h, int numColumns) {
 }
 
 void PotatorDrawer::createTexture(GLuint& tex, int w, int h, GLenum format) {
+  printf("%d, %d\n", w, h);
+  glGetError();
   glGenTextures(1, &tex); eglGetError();
   glBindTexture(GL_TEXTURE_2D, tex); eglGetError();
   glTexImage2D(GL_TEXTURE_2D, 0, format, w, h, 0, format, GL_UNSIGNED_BYTE, NULL); eglGetError();

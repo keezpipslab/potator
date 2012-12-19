@@ -5,10 +5,10 @@ void testApp::setup(){
 	ofSetFrameRate(60);
   ofBackground(33);
   
-	app.setup("home.roxlu.com", "3344");
+	app.setup("localhost","3344");
   cam.setup(ofGetWidth(), ofGetHeight());
   cam.translate(0.0f, 0.0f, 8.0f);
-  ax.setup(10);
+  //ax.setup(10);
 }
 
 //--------------------------------------------------------------
@@ -20,7 +20,7 @@ void testApp::update(){
 void testApp::draw(){
 	const float* pm = cam.pm().getPtr();
   const float* vm = cam.vm().getPtr();
-  ax.draw(pm, vm);
+  //ax.draw(pm, vm);
   app.draw(pm, vm);
 }
 

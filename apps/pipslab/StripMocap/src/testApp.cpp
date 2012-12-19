@@ -798,6 +798,9 @@ void testApp::draw(){
 	
   cam.begin();
 	 
+  hal.draw();
+  
+  
   ofPushMatrix();         // push the current coordinate position
 	
   // ofRotateX(rigidB39.getGlobalOrientation().getEuler().y);          // change the coordinate system
@@ -1251,6 +1254,14 @@ void testApp::keyPressed  (int key){
   // they come up *under* the fullscreen window
   // use alt-tab to navigate to the settings
   // window. we are working on a fix for this...
+  if (key=='h'){
+		
+    copyToSpaceShip();
+  }
+  if (key=='j'){
+		
+    hal.setParent(rigidB39);
+  }
   if (key=='e'){
 		
     doExternalCam();
@@ -2263,7 +2274,16 @@ void testApp::newMidiMessage(ofxMidiMessage& msg) {
   }
 }
 
-
+void testApp::copyToSpaceShip(){
+  saveAll();
+  dir.listDir("/Users/keezpipslab/Desktop/3d/");
+  dir.sort();
+ // dir.[dir.size()].getBaseName();
+ 	string n= dir[dir.size()-1].getBaseName();
+	hal.zetup(n);
+	newField();
+  
+}
 
 void testApp::exit() {
 	

@@ -13,6 +13,7 @@
 #include "ofxQTKitVideoGrabber.h"
 #include "ofxSyphon.h"
 #include <potator/PotatorServerApplication.h>
+#include "Spaceship.h"
 
 // listen on port 12345
 #define PORT 6000
@@ -262,5 +263,8 @@ class testApp : public ofBaseApp , public ofxMidiListener {
 
   PotatorServerApplication server;
   void sendViaRoxlu();
-	
+  
+  spaceship hal;
+
+	void copyToSpaceShip();
 };

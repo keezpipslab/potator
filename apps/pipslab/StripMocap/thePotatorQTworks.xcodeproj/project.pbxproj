@@ -101,6 +101,7 @@
 		A592FA22159B4859003AE932 /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A592FA14159B4859003AE932 /* ofxOscSender.cpp */; };
 		A5C5CA2A16398FA800BAD1FC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C5CA2916398FA800BAD1FC /* CoreVideo.framework */; };
 		A5E07C16163EC90D00A1E557 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E07C15163EC90D00A1E557 /* QTKit.framework */; };
+		AA0D9AB616826F88009BA48E /* Spaceship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA0D9AB416826F88009BA48E /* Spaceship.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -336,6 +337,8 @@
 		A5C5CA2916398FA800BAD1FC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		A5E07C15163EC90D00A1E557 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
 		A5FC6FF516060A1B00734798 /* kwast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kwast.h; sourceTree = "<group>"; };
+		AA0D9AB416826F88009BA48E /* Spaceship.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Spaceship.cpp; sourceTree = "<group>"; };
+		AA0D9AB516826F88009BA48E /* Spaceship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spaceship.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -1005,6 +1008,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				AA0D9AB416826F88009BA48E /* Spaceship.cpp */,
+				AA0D9AB516826F88009BA48E /* Spaceship.h */,
 				54ED67751681DFDB00B2CC91 /* StreamingMocapShared */,
 				A5FC6FF516060A1B00734798 /* kwast.h */,
 				A51BC7581576718C00F43E4D /* saus.h */,
@@ -1196,6 +1201,7 @@
 				54ED67931681DFDB00B2CC91 /* StreamingGeometryServer.cpp in Sources */,
 				54ED67941681DFDB00B2CC91 /* StreamingPotatorClient.cpp in Sources */,
 				54ED67951681DFDB00B2CC91 /* StreamingPotatorServer.cpp in Sources */,
+				AA0D9AB616826F88009BA48E /* Spaceship.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

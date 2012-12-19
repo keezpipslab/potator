@@ -95,7 +95,7 @@ void PotatorDrawer::update() {
     bool ati_bug = true;
     ati_bug = false;
     if(ati_bug) {
-      glBindVertexArrayAPPLE(vao);
+      glBindVertexArray(vao);
       glBindBuffer(GL_ARRAY_BUFFER, vbo);
       glBufferData(GL_ARRAY_BUFFER, bytes_allocated, NULL, GL_DYNAMIC_DRAW);
       glEnableVertexAttribArray(a_pos_id);

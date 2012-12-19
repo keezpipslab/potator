@@ -988,6 +988,7 @@ void testApp::draw(){
     texturePts.push_back(0);
     texturePts[last] = currentLine;
 		
+    sendViaRoxlu();
     ofDrawBitmapString("x:" + ofToString(pts[last].x) + " y:"+ ofToString(pts[last].y)+ " z:" + ofToString(pts[last].z)  , 200, 20 );
 		
   }
@@ -1000,15 +1001,8 @@ void testApp::draw(){
     texturePts.push_back(currentLine);
     
     
-   sendViaRoxlu();
-    // @roxlu
-    int current_line_number = currentLine; // @todo what variable to use for the curr line?
-    server.streaming_potator.sendTextureLine(
-                                             current_line_number,
-                                             sendableTexture,
-                                             85 * 3
-                                             );
-		
+    sendViaRoxlu();
+   		
   }
 	
   // butterflyOn sausageOn bubbleOn
@@ -1029,6 +1023,9 @@ void testApp::draw(){
     pts2.push_back(rigidB39.getGlobalPosition());
 				
     texturePts.push_back(currentLine);
+    
+     sendViaRoxlu();
+    
 		
   }
   if (showInterface) {
@@ -1082,8 +1079,9 @@ void testApp::draw(){
 
 void testApp::sendViaRoxlu(){
   // @roxlu
-  ofPoint& p1 = rigidZads1.getGlobalPosition();
-  ofPoint& p2 = rigidZads2.getGlobalPosition();
+
+  ofVec3f p1 = pts.back(); //rigidZasd1.getGlobalPosition();
+  ofVec3f p2 = pts2.back(); //rigidZasd2.getGlobalPosition();
   server.streaming_potator.sendVertexPositions(p1.x, p1.y, p1.z, p2.x, p2.y, p2.z, currentLine);
   server.streaming_potator.sendTextureLine(
                                          currentLine,

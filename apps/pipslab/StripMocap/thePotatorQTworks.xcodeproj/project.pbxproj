@@ -1445,7 +1445,7 @@
 					"$(OF_CORE_LIBS)",
 					"$(OTHER_LDFLAGS_QUOTED_FOR_TARGET_1)",
 				);
-				OTHER_LDFLAGS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../addons_diederick/roxlu/extern/lib/mac/32/libuv.a\"";
+				OTHER_LDFLAGS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/roxlu/extern/lib/mac/32/libuv.a\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = thePotatorQTworksDebug;
 				WRAPPER_EXTENSION = app;
@@ -1589,7 +1589,7 @@
 					"$(OF_CORE_LIBS)",
 					"$(OTHER_LDFLAGS_QUOTED_FOR_TARGET_1)",
 				);
-				OTHER_LDFLAGS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../addons_diederick/roxlu/extern/lib/mac/32/libuv.a\"";
+				OTHER_LDFLAGS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/roxlu/extern/lib/mac/32/libuv.a\"";
 				PREBINDING = NO;
 				PRODUCT_NAME = thePotatorQTworks;
 				WRAPPER_EXTENSION = app;

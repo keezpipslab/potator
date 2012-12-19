@@ -265,7 +265,7 @@ void testApp::setup(){
 
   // @roxlu
   server.streaming_potator.setTextureSize(512, 2048);
-  server.setup();
+  server.setup("3344");
 }
 
 

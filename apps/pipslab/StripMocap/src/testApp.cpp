@@ -246,7 +246,7 @@ void testApp::setup(){
 	
   //----
   sender.setup(HOST, PORT);
-  sendOSCout = false;
+  sendOSCout = true;
 	
 	
 	
@@ -504,7 +504,7 @@ void testApp::update(){
       */
 		
       // check for mouse moved message
-      if ( m.getAddress() == "/rigidbody/65540" ){
+      if ( m.getAddress() == "/rigidbody/65542" ){
 			
 			
 			
@@ -779,7 +779,7 @@ void testApp::draw(){
 		
 		
     ofDrawBitmapString("PIPS:lab Potator tool v0.5", 200, 740);
-    ofDrawBitmapString("fov:" + ofToString(myFov) + " tilt:" + ofToString(myTilt) + " pan:" + ofToString(myPan), 200, 760);
+    ofDrawBitmapString("fov:" + ofToString(myFov) + " tilt:" + ofToString(myTilt) + " pan:" + ofToString(myPan) + " roll:" + ofToString(myRoll), 200, 760);
     ofDrawBitmapString("cr:" + ofToString(currentLine) + " tP:" + ofToString(texturePos ) + " teller:" + ofToString(dirTeller ) , 200, 780);
     ofDrawBitmapString("camMode:" + ofToString(camMode) + " realTimeGrab:" + ofToString(realTimeGrab) , 200, 720);
   }
@@ -1333,14 +1333,14 @@ void testApp::keyPressed  (int key){
       cam.setFov(myFov);
       break;
     case '[':
-      //myTilt--;
-      //cam.tilt(-1);
-      texturePosFloat -= 1.0;
+     myTilt--;
+      cam.tilt(-1);
+     // texturePosFloat -= 1.0;
       break;
     case ']':
-      texturePosFloat += 1.0;
-      //myTilt++;
-      //cam.tilt(1);
+     /// texturePosFloat += 1.0;
+     myTilt++;
+     cam.tilt(1);
       break;
     case '9':
       myPan--;

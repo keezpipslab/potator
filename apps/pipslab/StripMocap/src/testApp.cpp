@@ -246,6 +246,7 @@ void testApp::setup(){
 	
   //----
   sender.setup(HOST, PORT);
+  senderRGB.setup(HOSTRGB, PORT);
   sendOSCout = true;
 	
 	
@@ -279,7 +280,7 @@ void testApp::update(){
       // get the next message
       ofxOscMessage m;
       receiver.getNextMessage( &m );
-      if (sendOSCout){sender.sendMessage(m);}
+    //  if (sendOSCout){sender.sendMessage(m);}
 		
 		
 		
@@ -797,9 +798,10 @@ void testApp::draw(){
 	
 	
   cam.begin();
-	 
+	   ofPushMatrix();
+  glScalef(0.5, 0.5, 0.5);
   hal.draw();
-  
+    ofPopMatrix();
   
   ofPushMatrix();         // push the current coordinate position
 	
@@ -1391,6 +1393,12 @@ void testApp::keyPressed  (int key){
 			
       camMode++;
       if (camMode >5) camMode=0;
+      if (camMode ==4){
+        myFov= 59;
+        cam.setFov(myFov);
+       // cout << "cam " << cam.getOrientationEuler().x;
+       // rigidB.setOrientation(beamCamPoint.getGlobalOrientation());
+      }
       break;
 			
     case 'i':
@@ -2275,7 +2283,7 @@ void testApp::newMidiMessage(ofxMidiMessage& msg) {
 }
 
 void testApp::copyToSpaceShip(){
-  saveAll();
+ if (pts.size()>0) saveAll();
   dir.listDir("/Users/keezpipslab/Desktop/3d/");
   dir.sort();
  // dir.[dir.size()].getBaseName();
@@ -2298,5 +2306,7 @@ void testApp::sendOSCommand(string naam, bool onN){
     m.setAddress(naam);
     m.addIntArg(onN);
     sender.sendMessage(m);
+    senderRGB.sendMessage(m);
+
   }
 }

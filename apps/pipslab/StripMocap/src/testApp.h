@@ -19,6 +19,7 @@
 #define PORT 6000
 #define NUM_MSG_STRINGS 20
 #define HOST "192.168.0.19"
+#define HOSTRGB "192.168.0.19"
 
 
 struct posquad {
@@ -243,6 +244,7 @@ class testApp : public ofBaseApp , public ofxMidiListener {
   //-----osc
   bool sendOSCout;
   ofxOscSender sender;
+  ofxOscSender senderRGB;
   void sendOSCommand(string naam, bool onN);
 	
   bool singleField;
